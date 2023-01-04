@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*
+{
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Loader */
+.loader-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;      
+}
+
+.waiting-screen
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loader
+{
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin
+{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Container */
+.container
+{
+    display: flex;
+    width: 350px; /* standart - 700 */
+    height: 200px; /* standart - 580 */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main */
+.main
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamepad-axes
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stic-number
+{
+    margin: 3px;
+}
+
+/* Hidden */
+.hidden
+{
+    display: none;
+}

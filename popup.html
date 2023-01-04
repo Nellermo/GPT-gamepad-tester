@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GPT!</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="waiting-screen" class="waiting-screen">
+            <div class="loader-title">Waiting for gamepad</div>
+            <div class="loader"></div>
+        </div>
+
+        <div id="main" class="main hidden">
+            <h1 id="main-text" class="loader-title">Connected!</h1>
+            <div id="gamepad-axes" class="gamepad-axes">
+                <h1 id="left-stic-vertical" class="stic-number">0</h1>
+                <h1 id="left-stic-horisontal" class="stic-number">0</h1>
+                <h1 id="right-stic-vertical" class="stic-number">0</h1>
+                <h1 id="right-stic-horisontal" class="stic-number">0</h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
